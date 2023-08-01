@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "NewContact_GetSyncDate_Request": {
+      "type": "object",
+      "$ref": "#/definitions/NewContact_GetSyncDate_RequestType"
+    },
+    "NewContact_GetSyncDate_Response": {
+      "type": "object",
+      "$ref": "#/definitions/NewContact_GetSyncDate_ResponseType"
+    }
+  },
+  "definitions": {
+    "NewContact_GetSyncDate_RequestType": {
+      "type": "object",
+      "properties": {
+        "usp_BTSync_NewContact_GetSyncDate": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": false
+        }
+      },
+      "required": ["usp_BTSync_NewContact_GetSyncDate"],
+      "additionalProperties": false
+    },
+    "NewContact_GetSyncDate_ResponseType": {
+      "type": "object",
+      "properties": {
+        "dbo.LastSyncTicker": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/dbo.LastSyncTickerType"
+          }
+        }
+      },
+      "required": ["dbo.LastSyncTicker"],
+      "additionalProperties": false
+    },
+    "dbo.LastSyncTickerType": {
+      "type": "object",
+      "properties": {
+        "LastSyncDate": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LastSyncDateType"
+          }
+        },
+        "SiebelId": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SiebelIdType"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "LastSyncDateType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    },
+    "SiebelIdType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    }
+  }
+}
