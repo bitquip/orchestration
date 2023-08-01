@@ -34,7 +34,7 @@
 The code defines a service called `ExistingContactOrch`. It contains a main scope named `synchronized`, which handles the processing logic. The service has several ports, each serving different purposes.
 
 
-![image](https://github.com/hunter-hartline_vizient/Orchestration/assets/138223562/75565221-d545-481e-9b0f-fc2afaf79c17)
+![image](https://github.com/bitquip/orchestration/assets/106825912/1e07dfcc-d5df-4db0-a454-0f843e5fa0f4)
 
 
 1. **Activation and Receiving**: The service begins with the `activate receive` statement, which listens for incoming messages on the `SiebelContactsPORT.GetSiebelContacts` port. The received message is stored in the `ExistingContactsMSG` variable. An `ErrorMessageVar` of type `System.Exception` is initialized to handle exceptions.
