@@ -1,0 +1,34 @@
+{
+  "SynchronizationResult": {
+    "complexType": {
+      "Success": {
+        "type": "int"
+      },
+      "ErrorSource": {
+        "type": "string"
+      },
+      "ErrorType": {
+        "type": "string"
+      },
+      "ErrorMessage": {
+        "type": "string"
+      },
+      "NewItemID": {
+        "type": "string",
+        "default": "00000000000000000000000000000000"
+      },
+      "LastUpdateDate": {
+        "type": "string"
+      },
+      "NewItemID2": {
+        "type": "string"
+      },
+      "UHCLogin": {
+        "type": "string"
+      },
+      "UHCGUID": {
+        "type": "string"
+      }
+    }
+  }
+}

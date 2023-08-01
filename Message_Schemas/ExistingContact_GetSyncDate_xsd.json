@@ -1,0 +1,82 @@
+// The ExistingContact_GetSyncDateRequest object contains the usp_BTSync_ExistingContact_GetSyncDate object with no attributes, and the ExistingContact_GetSyncDateResponse object contains the dbo.LastSyncTicker array, which can contain objects with the LastSyncDate and SiebelId arrays of string values. 
+
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "ExistingContact_GetSyncDateRequest": {
+        "type": "object",
+        "$ref": "#/definitions/ExistingContact_GetSyncDateRequestType"
+      },
+      "ExistingContact_GetSyncDateResponse": {
+        "type": "object",
+        "$ref": "#/definitions/ExistingContact_GetSyncDateResponseType"
+      }
+    },
+    "definitions": {
+      "ExistingContact_GetSyncDateRequestType": {
+        "type": "object",
+        "properties": {
+          "usp_BTSync_ExistingContact_GetSyncDate": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+          }
+        },
+        "required": ["usp_BTSync_ExistingContact_GetSyncDate"],
+        "additionalProperties": false
+      },
+      "ExistingContact_GetSyncDateResponseType": {
+        "type": "object",
+        "properties": {
+          "dbo.LastSyncTicker": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/dbo.LastSyncTickerType"
+            }
+          }
+        },
+        "required": ["dbo.LastSyncTicker"],
+        "additionalProperties": false
+      },
+      "dbo.LastSyncTickerType": {
+        "type": "object",
+        "properties": {
+          "LastSyncDate": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/LastSyncDateType"
+            }
+          },
+          "SiebelId": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/SiebelIdType"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "LastSyncDateType": {
+        "type": "object",
+        "properties": {
+          "$value": {
+            "type": "string"
+          }
+        },
+        "required": ["$value"],
+        "additionalProperties": false
+      },
+      "SiebelIdType": {
+        "type": "object",
+        "properties": {
+          "$value": {
+            "type": "string"
+          }
+        },
+        "required": ["$value"],
+        "additionalProperties": false
+      }
+    }
+  }
+  
