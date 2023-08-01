@@ -1,0 +1,89 @@
+{
+  "ProfileHashUpdateInsertRequest": {
+    "complexType": {
+      "usp_BTSync_UPSERTProfileHash": {
+        "maxOccurs": "unbounded",
+        "minOccurs": 0,
+        "complexType": {
+          "create_date": {
+            "type": "string"
+          },
+          "profile_hash_value": {
+            "type": "string"
+          },
+          "update_date": {
+            "type": "string"
+          },
+          "user_guid": {
+            "type": "string"
+          },
+          "user_login": {
+            "type": "string"
+          },
+          "siebel_id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "ProfileHashUpdateInsertResponse": {
+    "complexType": {
+      "_x0040_Result": {
+        "maxOccurs": "unbounded",
+        "minOccurs": 0,
+        "type": "_x0040_ResultType"
+      }
+    }
+  },
+  "_x0040_ResultType": {
+    "choice": {
+      "maxOccurs": "unbounded",
+      "minOccurs": 0,
+      "ErrorCode": {
+        "type": "ErrorCodeType",
+        "namespace": "http://Edu.UHC.Synchronizer/ProfileHashUpdateInsert"
+      },
+      "ErrorMessage": {
+        "type": "ErrorMessageType",
+        "namespace": "http://Edu.UHC.Synchronizer/ProfileHashUpdateInsert"
+      },
+      "ErrorSource": {
+        "type": "ErrorSourceType",
+        "namespace": "http://Edu.UHC.Synchronizer/ProfileHashUpdateInsert"
+      },
+      "ErrorType": {
+        "type": "ErrorTypeType",
+        "namespace": "http://Edu.UHC.Synchronizer/ProfileHashUpdateInsert"
+      }
+    }
+  },
+  "ErrorCodeType": {
+    "simpleContent": {
+      "extension": {
+        "base": "int"
+      }
+    }
+  },
+  "ErrorMessageType": {
+    "simpleContent": {
+      "extension": {
+        "base": "string"
+      }
+    }
+  },
+  "ErrorSourceType": {
+    "simpleContent": {
+      "extension": {
+        "base": "string"
+      }
+    }
+  },
+  "ErrorTypeType": {
+    "simpleContent": {
+      "extension": {
+        "base": "string"
+      }
+    }
+  }
+}

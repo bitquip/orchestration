@@ -1,0 +1,48 @@
+{
+  "GetDefaultGroupsRequest": {
+    "complexType": {
+      "sequence": {
+        "usp_BTSync_GetDefaultGroups": {
+          "complexType": {
+            "attribute": {
+              "ACCOUNT_ID": { "type": "xs:string" },
+              "UHC_ACCOUNT_MEMBER_TYPE": { "type": "xs:string" },
+              "UHC_ACCOUNT_TYPE": { "type": "xs:string" },
+              "UHC_Site_Type": { "type": "xs:string" },
+              "Member_ID": { "type": "xs:string" },
+              "Alliance_ID": { "type": "xs:string" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "GetDefaultGroupsResponse": {
+    "complexType": {
+      "sequence": {
+        "SyncMatrix": {
+          "type": "q1:SyncMatrixType",
+          "maxOccurs": "unbounded",
+          "minOccurs": 0,
+          "xmlns:q1": "http://Edu.UHC.Synchronizer/GetDefaultGroups"
+        }
+      }
+    }
+  },
+  "SyncMatrixType": {
+    "complexType": {
+      "choice": {
+        "maxOccurs": "unbounded",
+        "minOccurs": 0,
+        "ADSGroupDN": { "type": "q2:ADSGroupDNType", "xmlns:q2": "http://Edu.UHC.Synchronizer/GetDefaultGroups" }
+      }
+    }
+  },
+  "ADSGroupDNType": {
+    "simpleContent": {
+      "extension": {
+        "base": "xs:string"
+      }
+    }
+  }
+}

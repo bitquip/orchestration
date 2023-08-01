@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "ContactRequest": {
+        "type": "object",
+        "$ref": "#/definitions/ContactRequestType"
+      }
+    },
+    "definitions": {
+      "ContactRequestType": {
+        "type": "object",
+        "properties": {
+          "bzt_Contact_Query": {
+            "type": "object",
+            "properties": {
+              "LoginName": { "type": "string" }
+            },
+            "required": ["LoginName"],
+            "additionalProperties": false
+          }
+        },
+        "required": ["bzt_Contact_Query"],
+        "additionalProperties": false
+      }
+    }
+  }
+  

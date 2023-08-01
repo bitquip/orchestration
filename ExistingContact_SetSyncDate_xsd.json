@@ -1,0 +1,121 @@
+// The ExistingContact_SetSyncDateRequest object contains the usp_BTSync_ExistingContact_SetSyncDate object with the LastSyncDate and SiebelId attributes. The ExistingContact_SetSyncDateResponse object contains the _x0040_Result array, which can contain objects with the ErrorCode, ErrorMessage, ErrorSource, and ErrorType arrays of string and integer values.
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "ExistingContact_SetSyncDateRequest": {
+      "type": "object",
+      "$ref": "#/definitions/ExistingContact_SetSyncDateRequestType"
+    },
+    "ExistingContact_SetSyncDateResponse": {
+      "type": "object",
+      "$ref": "#/definitions/ExistingContact_SetSyncDateResponseType"
+    }
+  },
+  "definitions": {
+    "ExistingContact_SetSyncDateRequestType": {
+      "type": "object",
+      "properties": {
+        "usp_BTSync_ExistingContact_SetSyncDate": {
+          "type": "object",
+          "properties": {
+            "LastSyncDate": {
+              "type": "string"
+            },
+            "SiebelId": {
+              "type": "string"
+            }
+          },
+          "required": ["LastSyncDate", "SiebelId"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["usp_BTSync_ExistingContact_SetSyncDate"],
+      "additionalProperties": false
+    },
+    "ExistingContact_SetSyncDateResponseType": {
+      "type": "object",
+      "properties": {
+        "_x0040_Result": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/_x0040_ResultType"
+          }
+        }
+      },
+      "required": ["_x0040_Result"],
+      "additionalProperties": false
+    },
+    "_x0040_ResultType": {
+      "type": "object",
+      "properties": {
+        "ErrorCode": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorCodeType"
+          }
+        },
+        "ErrorMessage": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorMessageType"
+          }
+        },
+        "ErrorSource": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorSourceType"
+          }
+        },
+        "ErrorType": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorTypeType"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorCodeType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "integer"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    },
+    "ErrorMessageType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    },
+    "ErrorSourceType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    },
+    "ErrorTypeType": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string"
+        }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
+    }
+  }
+}

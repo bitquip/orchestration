@@ -1,0 +1,28 @@
+{
+    "POUR": {
+      "complexType": {
+        "HEADER": {
+          "complexType": {
+            "sequence": {
+              "ProductSecurityGroup": {
+                "type": "string",
+                "sequence_number": 1,
+                "justification": "left"
+              },
+              "EmailAddress": {
+                "type": "string",
+                "sequence_number": 2,
+                "justification": "left"
+              },
+              "Wave": {
+                "type": "string",
+                "sequence_number": 3,
+                "justification": "left"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

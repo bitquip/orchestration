@@ -1,0 +1,134 @@
+{
+  "Contact": {
+    "complexType": {
+      "sequence": {
+        "ADGuid": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ADLogin": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "AccountId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Active": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "AssistantEmail": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "AssistantName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "AssistantPhoneNumber": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Comment": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ContactStatus": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Contractor": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "CorrespondingOrganization": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Credential": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "DepartmentName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Email": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Fax": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "FirstName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Gender": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Id": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "InterestString": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "LastName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MailingCity": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MailingCountry": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MailingPostalCode": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MailingState": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MailingStreet": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MarketPlaceDateTimeToUHC": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "MarketPlaceLogin": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MarketPlaceLoginStatus": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MedicareId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MiddleName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MobilePhone": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "NeverCall": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "NeverEmail": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "NeverMail": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "NeverUHCNews": { "type": "xs:boolean", "nillable": true, "minOccurs": 0 },
+        "PhoneNumber": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "PhysicialSpeciality": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "PreferredCommunication": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "PreferredName": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ProductRequestString": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SATDisclaimerDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "Salutation": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SecondaryJobTitle": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SecurityComment": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SecurityEndDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "SecurityStartDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "ShippingCity": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ShippingCountry": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ShippingPostalCode": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ShippingState": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ShippingStreet": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SiebelContactId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SiteType": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Source": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Suffix": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Title": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "UHCInactivatedBy": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "iPlanContactId": { "type": "xs:string", "nillable": true, "minOccurs": 0 }
+      }
+    }
+  },
+  "Activity": {
+    "complexType": {
+      "sequence": {
+        "CPOId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ContactId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Description": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "DueDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "OwnerId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Priority": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ProductId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Status": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SubType": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Type": { "type": "xs:string", "nillable": true, "minOccurs": 0 }
+      }
+    }
+  },
+  "Asset": {
+    "complexType": {
+      "sequence": {
+        "AccountId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ContactId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ContactParticipationStatus": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Description": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "InstallDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "ProductId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Role": { "type": "xs:string", "nillable": true, "minOccurs": 0 }
+      }
+    }
+  },
+  "Meeting": {
+    "complexType": {
+      "sequence": {
+        "Description": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "EndDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "IplanWebExId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Operation": { "type": "tns:OperationType", "minOccurs": 0 },
+        "OwnerLogin": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Source": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "StartDate": { "type": "xs:dateTime", "nillable": true, "minOccurs": 0 },
+        "Status": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "SubType": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Title": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Type": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "UHCProgram": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Url": { "type": "xs:string", "nillable": true, "minOccurs": 0 }
+      }
+    }
+  },
+  "OperationType": {
+    "restriction": {
+      "base": "xs:string",
+      "enumeration": [
+        { "value": "INSERT" },
+        { "value": "UPDATE" }
+      ]
+    }
+  },
+  "MeetingParticipation": {
+    "complexType": {
+      "sequence": {
+        "ContactId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "MeetingId": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "Operation": { "type": "tns:OperationType", "minOccurs": 0 },
+        "ParticipantsRole": { "type": "xs:string", "nillable": true, "minOccurs": 0 },
+        "ParticipationStatus": { "type": "xs:string", "nillable": true, "minOccurs": 0 }
+      }
+    }
+  }
+}

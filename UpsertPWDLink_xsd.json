@@ -1,0 +1,101 @@
+{
+  "UPSERTPWDLINKRequest": {
+    "complexType": {
+      "sequence": {
+        "USP_BTSync_UPSERTPWDLINK": {
+          "complexType": {
+            "attribute": {
+              "Accesscode1": {
+                "type": "string"
+              },
+              "Accesscode2": {
+                "type": "string"
+              },
+              "Link": {
+                "type": "string"
+              },
+              "LoginName": {
+                "type": "string"
+              },
+              "SourceType": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "UPSERTPWDLINKResponse": {
+    "complexType": {
+      "sequence": {
+        "_x0040_Result": {
+          "type": "q1:_x0040_ResultType",
+          "maxOccurs": "unbounded",
+          "minOccurs": "0",
+          "xmlns:q1": "http://Edu.UHC.Synchronizer/UPSERTPWDLINK"
+        }
+      }
+    }
+  },
+  "_x0040_ResultType": {
+    "complexType": {
+      "choice": {
+        "maxOccurs": "unbounded",
+        "minOccurs": "0",
+        "ErrorCode": {
+          "type": "q2:ErrorCodeType",
+          "xmlns:q2": "http://Edu.UHC.Synchronizer/UPSERTPWDLINK"
+        },
+        "ErrorMessage": {
+          "type": "q3:ErrorMessageType",
+          "xmlns:q3": "http://Edu.UHC.Synchronizer/UPSERTPWDLINK"
+        },
+        "ErrorSource": {
+          "type": "q4:ErrorSourceType",
+          "xmlns:q4": "http://Edu.UHC.Synchronizer/UPSERTPWDLINK"
+        },
+        "ErrorType": {
+          "type": "q5:ErrorTypeType",
+          "xmlns:q5": "http://Edu.UHC.Synchronizer/UPSERTPWDLINK"
+        }
+      }
+    }
+  },
+  "ErrorCodeType": {
+    "complexType": {
+      "simpleContent": {
+        "extension": {
+          "base": "xs:int"
+        }
+      }
+    }
+  },
+  "ErrorMessageType": {
+    "complexType": {
+      "simpleContent": {
+        "extension": {
+          "base": "xs:string"
+        }
+      }
+    }
+  },
+  "ErrorSourceType": {
+    "complexType": {
+      "simpleContent": {
+        "extension": {
+          "base": "xs:string"
+        }
+      }
+    }
+  },
+  "ErrorTypeType": {
+    "complexType": {
+      "simpleContent": {
+        "extension": {
+          "base": "xs:string"
+        }
+      }
+    }
+  }
+}
