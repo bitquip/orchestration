@@ -1,7 +1,6 @@
 # ErrorHandlingOrch.odx
 
-![image](https://github.com/hunter-hartline_vizient/Orchestration/assets/138223562/a3053b69-8995-48c8-8b67-2946230577c9)
-
+![image](https://github.com/bitquip/orchestration/assets/106825912/318c1523-d485-4943-9387-90ef7878653b)
 
 ## Module Metadata
 
