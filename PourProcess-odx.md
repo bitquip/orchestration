@@ -55,8 +55,7 @@
    | 11   | Send the `BatchCompletedEmailMSG` to `PourResultEmailPORT` |
 
 
-![image](https://github.com/hunter-hartline_vizient/Orchestration/assets/138223562/ba0dab99-4d2e-42c3-82f8-a21f31d63a36)
-
+![image](https://github.com/bitquip/orchestration/assets/106825912/6913c039-85d8-4ef1-9d5b-c9b849ad672e)
 
 9. Relationships:
 
@@ -65,4 +64,5 @@
    | SyncResponsePORT      | GetSyncResponse                | Receives `SyncResponseSummary` message with `BatchIDCORR` correlation |
    | PourResultEmailPORT   | SendResultEmail                | Sends `BatchCompletedEmailMSG` for email notification |
 
-![image](https://github.com/hunter-hartline_vizient/Orchestration/assets/138223562/71c988cb-20de-431d-b674-993d6afa3b05)
+![image](https://github.com/bitquip/orchestration/assets/106825912/27a711bf-5cdb-458f-b8b6-fcb2ea8cbda0)
+
