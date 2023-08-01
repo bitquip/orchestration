@@ -31,7 +31,7 @@
 
 **Service Body:**
 
-The code defines a service called `ExistingContactOrch`. It contains a main scope named `synchronized`, which handles the processing logic. The service has several ports, each serving different purposes.
+Defines a service called `ExistingContactOrch`. It contains a main scope named `synchronized`, which handles the processing logic. The service has several ports, each serving different purposes.
 
 
 ![image](https://github.com/bitquip/orchestration/assets/106825912/1e07dfcc-d5df-4db0-a454-0f843e5fa0f4)
