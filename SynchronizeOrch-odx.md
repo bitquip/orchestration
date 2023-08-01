@@ -181,4 +181,4 @@ The body contains the main processing logic.
 - Catch `System.Exception`, handle the error, and terminate the orchestration.
 - Catch any other exceptions and suspend the orchestration with a message "General Exception from Synchronize Orch Suspended".
 
-![image](https://github.com/hunter-hartline_vizient/Orchestration/assets/138223562/7fa8dc04-6e54-42f6-85a5-5433338bc5ae)
+![image](https://github.com/bitquip/orchestration/assets/106825912/cd5d4542-dcfc-48d8-8cac-d3f1f839af9c)
