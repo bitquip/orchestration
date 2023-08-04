@@ -13,7 +13,9 @@ New Contact Orchestration
 		
 			- External service (WCF)
 		
-			- Edu.UHC.Biztalk.Shared.Subscriber_www_uhc_edu_biztalk,Edu.UHC.Biztalk.Shared.SubscriberInterface, Edu.UHC.Synchronizer.SubscriberInterface.NewContact_ADInserContact_IN,Edu.UHC.Synchronizer.SubscriberInterface Edu.UHC.Synchronizer.Core.SynchronizationResult,Edu.UHC.Synchronizer.Core
+			- Edu.UHC.Biztalk.Shared.Subscriber_www_uhc_edu_biztalk
+   			- Edu.UHC.Biztalk.Shared.SubscriberInterface
+      			- Edu.UHC.Synchronizer.SubscriberInterface.NewContact_ADInserContact_IN
 			
 		- NewContact_HashProfileUpdate
 		
