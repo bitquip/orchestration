@@ -6,7 +6,6 @@
 
 1. **Message Types and Schemas:**
    - An XSD file defines the structure and data types of a specific message type. This message type corresponds to a particular business entity or data structure.
-   - For example, in your previous example of an XSD file with the root element "Contact," the XSD file defines the structure of the "Contact" message type.
 
 2. **Message Instances:**
    - A message instance is a specific XML document that conforms to a message type defined by an XSD schema. It is an actual data payload that carries the information to be processed.
