@@ -69,4 +69,10 @@ For UPRService, the `Request.ProfileAction` is used to determine if any products
 
 [Impl.UPRSubscriber](https://dev.azure.com/Vizientinc/SSO/_git/BizTalkSubscriberService?path=/Impl.UPRSubscriber/UPRSubscriber.cs&_a=contents&version=GBmaster)
 
+**Contains methods for creating, updating, and deleting products for a particular user.**
+
+**References Metis stored procedures in order to invoke various processes for creating, deleting, modifying products for a particular user.**
+
+**`usp_GrantAuthorization` is called from here.**
+
 
